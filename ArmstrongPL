@@ -1,0 +1,9 @@
+for liczba in range (0,1000000000):
+    suma = 0
+    kopia = liczba
+    while kopia > 0:
+        cyfra = kopia % 10
+        suma += cyfra ** len(str(liczba))
+        kopia //= 10
+    if suma == liczba:
+        print(liczba ," jest liczba armstronga ")
